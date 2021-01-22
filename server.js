@@ -20,7 +20,7 @@ mongoose.connect(connection_url, {
   useUnifiedTopology: true
 })
 .then(() => console.log( 'Database Connected' ))
-.catch(err => console.log( err + " What the fuck mongoose!!!" ));
+.catch(err => console.log( err + " Something wrong with mongoose" ));
 
 // API endpoints
 app.get("/", (req, res) => {
